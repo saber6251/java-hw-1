@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let Fan = prompt ('Enter how many fan you use.....')
+        let light = prompt ('Enter how many light you use.....')
+        let AC = prompt ('Enter how many AC you use.....')
+        let Fridge = prompt ('Enter how many Fridge you use.....')
+
+        let FanWatt = Fan * 10
+        let lightWatt = light * 5
+        let ACWatt = AC * 80
+        let FridgeWatt = Fridge * 50
+
+        let totalWattUse = FanWatt + lightWatt + ACWatt + FridgeWatt
+        let bill = totalWattUse * 300
+
+        document.write(`<h1 style="font-family:Cursive;">Total Electricity Used: ${totalWattUse} Watt`)
+        document.write(`<h1 style="font-family:Cursive;">Total Electricity bill: ${bill} `)
+
+        if(bill > 80000 ){
+            document.write(`<h2 style="font-family:Arial">WoW,Apni tw Poishawala,Taratari bill Pay koren bhai!<h2>`)
+        }
+        else{
+             document.write(`<h2 style="font-family:Arial">Bhai Apni tw dekhi amr moto <b style="color:red;">Gorib<b><h2>`)
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
